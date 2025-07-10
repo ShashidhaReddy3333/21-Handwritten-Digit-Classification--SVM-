@@ -44,14 +44,6 @@ python -m pip install -r requirements.txt
 
 # 2. Train SVM + baselines (default full grid)
 python mnist_idx_svm.py
-```
-
-On a 4‑core laptop:
-
-| Stage            | Time (full data) | Time (+PCA enabled) |
-| ---------------- | ---------------- | ------------------- |
-| Grid search 5×12 | \~12 min         | \~2 min             |
-| Final SVM fit    | \~90 s           | \~15 s              |
 
 Script saves the tuned pipeline to `mnist_rbf_svm.joblib` and prints a confusion matrix.
 
